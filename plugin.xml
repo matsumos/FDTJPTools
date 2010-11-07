@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+         <objectContribution
+              adaptable="true"
+              id="jp.fdt.fdttools"
+              objectClass="org.eclipse.core.resources.IFile">
+
+           <action
+                 class="jp.fdt.fdtjptools.actions.AlignAssignmentAction"
+                 definitionId="jp.fdt.fdtjptools.alignassignments.editor"
+                 enablesFor="?"
+                 id="jp.fdt.fdtjptools.alignassignments.editor"
+                 label="AlignAssignments"
+                 menubarPath="additions">
+           </action>
+		</objectContribution>
+
+   </extension>
+</plugin>
